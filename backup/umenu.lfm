@@ -1,0 +1,100 @@
+object fmenu: Tfmenu
+  Left = 339
+  Height = 220
+  Top = 178
+  Width = 320
+  Caption = 'Crud Lazarus - Perpustakaan'
+  Menu = MainMenu2
+  LCLVersion = '3.6.0.0'
+  WindowState = wsMaximized
+  object MainMenu1: TMainMenu
+    Left = 98
+    Top = 86
+    object mifile: TMenuItem
+      Caption = 'File'
+      object milogin: TMenuItem
+        Caption = 'Log In'
+        OnClick = miloginClick
+      end
+      object milogout: TMenuItem
+        Caption = 'Log Out'
+        Enabled = False
+      end
+      object Separator1: TMenuItem
+        Caption = '-'
+      end
+      object mikeluar: TMenuItem
+        Caption = 'Keluar'
+        OnClick = mikeluarClick
+      end
+    end
+    object miabout: TMenuItem
+      Caption = 'About'
+      object miprogrammer: TMenuItem
+        Caption = 'Programmer'
+        OnClick = miprogrammerClick
+      end
+    end
+  end
+  object MainMenu2: TMainMenu
+    Left = 176
+    Top = 86
+    object mifile2: TMenuItem
+      Caption = 'File'
+      object milogin2: TMenuItem
+        Caption = 'Log In'
+        Enabled = False
+      end
+      object milogout2: TMenuItem
+        Caption = 'Log Out'
+        OnClick = milogout2Click
+      end
+      object Separator2: TMenuItem
+        Caption = '-'
+      end
+      object mikeluar2: TMenuItem
+        Caption = 'Keluar'
+        Enabled = False
+      end
+    end
+    object mimaster: TMenuItem
+      Caption = 'Master'
+      object mibuku: TMenuItem
+        Caption = 'Buku'
+      end
+      object mianggota: TMenuItem
+        Caption = 'Anggota'
+      end
+      object mipetugas: TMenuItem
+        Caption = 'Petugas'
+      end
+    end
+    object mitransaksi: TMenuItem
+      Caption = 'Transaksi'
+      object mipeminjaman: TMenuItem
+        Caption = 'Peminjaman'
+      end
+      object mipengembalian: TMenuItem
+        Caption = 'Pengembalian'
+      end
+    end
+    object milaporan: TMenuItem
+      Caption = 'Laporan'
+      object milapbuku: TMenuItem
+        Caption = 'Lap. Buku'
+      end
+      object milapanggota: TMenuItem
+        Caption = 'Lap. Anggota'
+      end
+      object milappeminjaman: TMenuItem
+        Caption = 'Lap. Peminjaman'
+      end
+    end
+    object miabout2: TMenuItem
+      Caption = 'About'
+      object miprogrammer2: TMenuItem
+        Caption = 'Programmer'
+      end
+    end
+  end
+end

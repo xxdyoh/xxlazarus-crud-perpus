@@ -1,0 +1,185 @@
+object fbuku: Tfbuku
+  Left = 280
+  Height = 384
+  Top = 157
+  Width = 672
+  Caption = 'Master Buku'
+  ClientHeight = 384
+  ClientWidth = 672
+  OnShow = FormShow
+  Position = poDesktopCenter
+  LCLVersion = '3.6.0.0'
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 32
+    Width = 57
+    Caption = 'Kode Buku'
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 15
+    Top = 64
+    Width = 62
+    Caption = 'Nama Buku'
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 15
+    Top = 96
+    Width = 55
+    Caption = 'Jenis Buku'
+  end
+  object Label4: TLabel
+    Left = 16
+    Height = 15
+    Top = 128
+    Width = 57
+    Caption = 'Pengarang'
+  end
+  object Label5: TLabel
+    Left = 16
+    Height = 15
+    Top = 160
+    Width = 53
+    Caption = 'Stok Buku'
+  end
+  object edkodebuku: TEdit
+    Left = 104
+    Height = 23
+    Top = 32
+    Width = 144
+    TabOrder = 0
+    Text = 'edkodebuku'
+  end
+  object ednamabuku: TEdit
+    Left = 104
+    Height = 23
+    Top = 64
+    Width = 144
+    TabOrder = 1
+    Text = 'ednamabuku'
+  end
+  object edstokbuku: TEdit
+    Left = 104
+    Height = 23
+    Top = 160
+    Width = 144
+    TabOrder = 2
+    Text = 'edstokbuku'
+  end
+  object edpengarang: TEdit
+    Left = 104
+    Height = 23
+    Top = 128
+    Width = 144
+    TabOrder = 3
+    Text = 'edpengarang'
+  end
+  object bttambah: TButton
+    Left = 288
+    Height = 25
+    Top = 36
+    Width = 75
+    Caption = 'Tambah'
+    TabOrder = 4
+  end
+  object btubah: TButton
+    Left = 288
+    Height = 25
+    Top = 72
+    Width = 75
+    Caption = 'Ubah'
+    TabOrder = 5
+  end
+  object bthapus: TButton
+    Left = 288
+    Height = 25
+    Top = 110
+    Width = 75
+    Caption = 'Hapus'
+    TabOrder = 6
+  end
+  object bttutup: TButton
+    Left = 288
+    Height = 25
+    Top = 150
+    Width = 75
+    Caption = 'Tutup'
+    TabOrder = 7
+  end
+  object dbgbuku: TDBGrid
+    Left = 16
+    Height = 168
+    Top = 200
+    Width = 632
+    Color = clWindow
+    Columns = <    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'Kode Buku'
+        Width = 80
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'Nama Buku'
+        Width = 180
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'Jenis Buku'
+        Width = 120
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'Pengarang'
+        Width = 130
+      end    
+      item
+        Title.Alignment = taCenter
+        Title.Caption = 'Stok'
+        Width = 80
+      end>
+    TabOrder = 8
+  end
+  object cbjenisbuku: TComboBox
+    Left = 104
+    Height = 23
+    Top = 96
+    Width = 144
+    ItemHeight = 15
+    TabOrder = 9
+    Text = 'cbjenisbuku'
+  end
+  object dsbuku: TDataSource
+    Left = 120
+    Top = 240
+  end
+  object qrbuku: TSQLQuery
+    FieldDefs = <>
+    Params = <>
+    Macros = <>
+    Left = 216
+    Top = 240
+  end
+  object qraksi: TSQLQuery
+    FieldDefs = <>
+    Params = <>
+    Macros = <>
+    Left = 216
+    Top = 304
+  end
+  object trbuku: TSQLTransaction
+    Active = False
+    Left = 312
+    Top = 240
+  end
+  object cnbuku: TMySQL57Connection
+    Connected = False
+    LoginPrompt = False
+    KeepConnection = False
+    SkipLibraryVersionCheck = False
+    Left = 400
+    Top = 240
+  end
+end

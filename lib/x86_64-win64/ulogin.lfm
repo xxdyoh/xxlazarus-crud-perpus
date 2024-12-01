@@ -1,0 +1,63 @@
+object flogin: Tflogin
+  Left = 455
+  Height = 246
+  Top = 206
+  Width = 266
+  BorderStyle = bsToolWindow
+  Caption = 'Log In'
+  ClientHeight = 246
+  ClientWidth = 266
+  OnShow = FormShow
+  Position = poDesktopCenter
+  LCLVersion = '3.6.0.0'
+  object Label1: TLabel
+    Left = 32
+    Height = 15
+    Top = 56
+    Width = 52
+    Caption = 'username'
+  end
+  object edusername: TEdit
+    Left = 104
+    Height = 23
+    Top = 48
+    Width = 128
+    TabOrder = 0
+    Text = 'edusername'
+  end
+  object Label2: TLabel
+    Left = 34
+    Height = 15
+    Top = 96
+    Width = 50
+    Caption = 'Password'
+  end
+  object edpassword: TEdit
+    Left = 104
+    Height = 23
+    Top = 88
+    Width = 128
+    EchoMode = emPassword
+    PasswordChar = '*'
+    TabOrder = 1
+    Text = 'edpassword'
+  end
+  object btbatal: TButton
+    Left = 40
+    Height = 25
+    Top = 152
+    Width = 75
+    Caption = 'Batal'
+    TabOrder = 2
+    OnClick = btbatalClick
+  end
+  object btlogin: TButton
+    Left = 144
+    Height = 25
+    Top = 152
+    Width = 75
+    Caption = 'Log In'
+    TabOrder = 3
+    OnClick = btloginClick
+  end
+end
